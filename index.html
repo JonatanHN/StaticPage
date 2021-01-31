@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Orion es un bot multiuso en servidores de discord, permitiendote integrar comandos desde la web o almacenandolos desde la misma aplicacion de discord." />
+    <meta name="keywords" content="BOT,Discord,Discord Bot," />
+    <meta name="author" content="JonatanHN" />
+    <meta name="copyright" content="JonatanHN" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1, shrink-to-fit=no">
+    <meta property="og:description" content="Orion es un bot multiuso en servidores de discord, permitiendote integrar comandos desde la web o almacenandolos desde la misma aplicacion de discord." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/green-square-green/cover.png" />
+    <meta property="og:url" content="https://orion-bot-ds.web.app">
+    <meta property="og:title" content="Orion [BOT DISCORD]">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://jonatanhn-website.web.app" />
+    <meta name="twitter:creator" content="@jonatanhn00" />
+    <meta name="robots" content="">
+    <!--title-->
+    <title>[Developer Fronted]</title>
+    <link rel="icon" href="public/assets/img/profile-transparent.png">
+    <link rel="stylesheet" href="public/css/icomoon/style.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/all.css">
+    <!-- tippy -->
+    <link rel="stylesheet" href="public/css/theme-tippy.min.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <nav class="container-nav">
+                <div class="content-nav">
+                    <div class="circle-logo-page" data-tippy-content="🐱‍👤💻🏴‍☠️">
+                        <img src="public/assets/img/profile-gray.png" alt="" class="logo-page" />
+                    </div>
+                    <div class="links-pages">
+                        <a href="" class="links-nav" data-tippy-content="Inicio">
+                            <span class="icon-home2 i-nav"></span>
+                        </a>
+                        <a href="" class="links-nav">
+                            <span class="icon-user1 i-nav" data-tippy-content="Acerca de"></span>
+                        </a>
+                        <a href="" class="links-nav">
+                            <span class="icon-briefcase i-nav" data-tippy-content="Portafolío"></span>
+                        </a>
+                        <a href="" class="links-nav">
+                            <span class="icon-blog i-nav" data-tippy-content="Contacto"></span>
+                        </a>
+                        <a href="" class="links-nav" data-tippy-content="Ayuda">
+                            <span class="icon-lifebuoy i-nav"></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-socials">
+                <a href="https://facebook.com/jonatanhn00" target="_blank" class="link-social" data-tippy-content="Facebook">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a href="https://instagram.com/jonatanhn00" target="_blank" class="link-social" data-tippy-content="Instagram">
+                    <span class="icon-instagram"></span>
+                </a>
+                <a href="https://twitter.com/jonatanhn00" target="_blank" class="link-social" data-tippy-content="Twitter">
+
+                    <span class="icon-twitter"></span>
+                </a>
+            </div>
+            <!--end  menu-->
+            <div class="job-section">
+                <div class="centered-text">
+                    <div class="content-center">
+                        <h1 class="title-centered">
+                            {{ greeting }} <br />
+                            {{ specialty }}
+                        </h1>
+                        <h4>
+                            {{ message }}
+                            {{ messageTwo }}
+                        </h4>
+                        <a href="">
+                            <button class="btn next">
+                                <b>
+                                    Seguir Leyendo
+                                </b>
+                            </button>
+                        </a>
+                    </div>
+                    <img src="public/assets/page-objects/code.png" class="code" alt="" />
+                </div>
+            </div>
+            <!-- end welcome-->
+        </div>
+        <!--end container welcome-->
+        <div class="container">
+            <div class="container-info-repos">
+                <div class="data-repos">
+                    <h1 align="center">Repositorios de mi Github</h1>
+                    <div class="name-repo" id="namerepo">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end container api -->
+
+
+    </div> <!-- end app-->
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- versión de producción, optimizada para tamaño y velocidad -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="public/js/vue.js"></script>
+    <script src="public/js/api.js"></script>
+    <!-- tippyjs -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="public/js/tippy.js"></script>
+</body>
+
+</html>

@@ -202,7 +202,12 @@ a{
     text-shadow: 5px 5px 5px #000;
     color: #f1f3f7;
 }
-
+.t-r{
+    font-size: 40px;
+    margin:0px auto;
+    position: relative;
+    top:20px;
+}
 .code{
     width: 600px;
     border-radius: 7px;
@@ -214,32 +219,36 @@ a{
     box-shadow: 2px 2px 10px #2ecc72;
 }
 
-.container-info-repos{
-    width: 90%;
-    margin: 0px auto;
-}
-
-.data-repos{
+.container-repositorios{
     width: 100%;
+    height:100%;
     position: relative;
     margin: 0px auto;
 }
 .name-repo{
     position: relative;
-    top: 20px;
+    top: 0px;
     width: 50%;
-    height: 600px;
-    height: 100px;
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.name-repo> div{
-    margin: 10px;
+.repositorio {
+    margin: auto 10px;
     padding: 10px;
     text-align: center;
     border-radius: 4px;
     border: 2px solid rgba(46, 204, 114, .5);
     font-size: 13px;
     color: #2ecc72;
+    width: 200px;
+    height: 40px;
+}
+
+
+.green{
+    color: #2ecc72 ;
 }

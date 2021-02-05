@@ -10,11 +10,13 @@ function ejectProyect() {
             const fragment = document.createDocumentFragment();
             for (const userInfo of res.data) {
                 const listItem = document.createElement("div");
+                listItem.classList.add('repositorio');
+                listItem.setAttribute('data-tippy-content', `${userInfo.description}`);
                 listItem.innerHTML = ` 
-                <p data-tippy-content="${userInfo.description}"><span class="icon-github1"></span> ${userInfo.name}</p> 
-                <br>
-                <a href="${userInfo.html_url}" data-tippy-content="Ver el repositorio" style="color:#fff;" 
-                target="_blank">Visualizar</a>`;
+                <a class="green" href="${userInfo.html_url}" target="_blank">
+                <span class="icon-github1"></span> ${userInfo.name}
+                </a> 
+                `;
                 fragment.appendChild(listItem);
             }
             parrafo.appendChild(fragment);
